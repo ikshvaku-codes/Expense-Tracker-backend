@@ -4,6 +4,7 @@ import java.util.List;
 
 import org.springframework.stereotype.Service;
 
+import com.finance.expense.tracker.expense_tracker.DTO.ExpenseDTO;
 import com.finance.expense.tracker.expense_tracker.entity.ExpenseEntity;
 
 @Service
@@ -12,7 +13,7 @@ public interface ExpenseService {
 
     ExpenseEntity getExpenseById(Long id);
 
-    void addExpense(ExpenseEntity expense);
+    ExpenseDTO addExpense(ExpenseDTO expense);
 
     void updateExpense(Long id, ExpenseEntity expense);
 
